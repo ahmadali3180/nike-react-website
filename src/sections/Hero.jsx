@@ -42,16 +42,16 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-red-500/10">
         <img
           src={bigShoeImg}
           alt="shoe colletion"
           width={457.5}
           height={367.5}
-          className="object-cover relative max-w-[440px] max-h-[360px]"
+          className="object-cover relative max-w-[390px] max-h-[310px] max-w-screen-mobile-[300px] max-h-sreen-mobile-[280px]"
         />
 
-        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+        <div className="sm:right-[10%] sm:items-center md:left-[20%] left-[20%] top-[85%] flex sm:gap-6 gap-4 absolute sm:left-[10%] max-sm:px-6">
           {shoes.map((image, index) => (
             <div key={index}>
               <ShoeCard

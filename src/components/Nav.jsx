@@ -86,7 +86,7 @@ const Nav = () => {
                 className={`absolute w-full h-full flex flex-col items-center justify-start mt-40 gap-10 z-10`}
               >
                 {navLinks.map((link) => (
-                  <li key={link.label}>
+                  <li key={link.label} onClick={() => setMenuEnabled(false)}>
                     <a
                       href={link.href}
                       className="font-montserrat leading-normal font-semibold text-lg text-black/80"
